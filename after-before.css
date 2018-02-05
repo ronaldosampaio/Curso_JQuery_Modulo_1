@@ -1,0 +1,39 @@
+/* before inseri no inicio(esquerda) e after insere no final(direita) */
+
+
+.ab::after{
+	content: "<-----";
+	/*content: url(imagem.png);*/
+	color: yellow;
+	font-size: 35px;
+}
+
+.ab::before{
+	content: "---->";
+	/*content: url(imagem.png);*/
+	color: yellow;
+	font-size: 35px;
+}
+
+
+p{
+	font-size: 30px;
+}
+
+/* p::first-letter pega primeira letra do elemento */
+p::first-letter{
+	color: red;
+	font-size: 40px;
+	
+}
+/* p::first-letter seleciona a primeira linha do elemento */
+p::first-line{
+	background-color: blue;
+}
+
+/* quando selecionar o texto fica red */
+::selection{
+	color: :#0f0;
+	background-color: red;
+	
+}
