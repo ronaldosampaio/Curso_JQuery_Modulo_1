@@ -1,0 +1,38 @@
+.campo-digitacao{
+    font-size: 20px;
+	height: 130px;
+}
+.frase{
+	font-size: 20px;
+}
+.placar{
+	border: 2px solid black;
+	
+}
+
+.borda-verde{
+	border: 5px solid green;
+	color: green;
+}
+.borda-vermelha{
+	border: 5px solid red;
+	color:red;
+}
+.campo-desativado{
+	background-color: lightgrey;	
+}
+
+
+#site-loader {
+	display: none;
+	background: #FFFFFF url("../img/loading.gif") no-repeat center center;
+	opacity: 0.80;
+	position: fixed;
+	z-index: 999;
+	overflow: visible;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}

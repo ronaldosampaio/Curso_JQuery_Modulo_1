@@ -1,14 +1,18 @@
 As funções .val() e .text() servem tanto para alterar como para pegar o valor do texto de elementos.
+A função .val() é para alterar os valores dos campos de input, então se queremos preencher um <input type="text"> com um valor específico, é ela quem vamos usar.
 
 A função .text() pode ser usada para pegar de elementos como <h1>, <span> e <p>.
-
+A função .text() do jQuery serve para modificar o conteúdo de texto das tags, então se queremos alterar o texto de um <h1>, devemos utilizá-la.
 A função .val() pode ser usada para pegar de elementos como <input>, <textarea> e <select>.
-
-Ambas as funções .val() e .text() podem manipular os valores de texto dos elementos, mas a .val() funciona em elementos de <input> que são campos aonde o usuário do site insere dados , como os campos de <input>(todos os tipos), <textarea> e <select>.
-
 Já a função .text() pega o conteúdo de texto de tags HTML que tem texto dentro, como as <h1>, <span> e <p>
 
+
+Ambas as funções .val() e .text() podem manipular os valores de texto dos elementos, mas a .val() funciona em elementos de <input> que são campos aonde o usuário do site insere dados , como os campos de <input>(todos os tipos), <textarea> e <select>.
 Ambas as funções podem atribuir novos valores a determinados elementos, ou apenas pegar os valores deles.
+
+A função .attr(), como o próprio nome sugere é para alterar os atributos de elemento, como os atributos rows e col de uma textarea.
+
+Afunção .removeAttr() ele remove o atributo em vez de colocar a linha de codigo  $(".post").attr("disabled", false); use $(".post").removeAttr("disabled");
 
 A função .on() recebe dois parâmetros, o nome do evento a escutar e uma função com a ação que deve executar!
 
@@ -19,5 +23,31 @@ keyup: este evento é chamado quando uma tecla é solta.
 dblclick: evento que é chamado quando um elemento recebe um click duplo com o mouse.
 
 input: Esse evento é disparado quando o campo <input> ou <textarea> recebe uma entrada de texto qualquer.
+
+Eventos:
+A função one() apenas entra uma vez no evento assim não se repete isso para não chamar o evento varias vezes quando perder o foco e voltar novamente. Tanto no focu ou clique.
+
+Resumindo a função one() só funciona uma vez no evento não se repete
+
+O evento de focus é usado para detectar quando o usuário entra em um campo, não necessariamente digitando.
+
+Utilizamos o evento de focus para detectar se o usuário já entrou em um campo de texto. O ato de entrar pode ser feito de vários modos, como clicar com o mouse no campo, ou navegar através da tecla tab .
+
+É um evento muito utilizado quando queremos oferecer ao usuário uma experiência melhor de uso dos nosso websites, como por exemplo sugerir um autocomplete de um campo assim que ele ganhar foco.
+
+A função .one() só escuta o evento por uma vez, e a função .on() continua escutando os eventos indefinidamente.
+
+A função .one() funciona de modo semelhante a função .on(), ambas podem ser utilizadas em qualquer elemento, recebem qualquer evento como primeiro parâmetro e uma função anônima ou uma função nomeada como segundo parâmetro.
+
+A diferença entre elas é na hora de escutar os eventos, a função .one() escuta o evento apenas uma única vez, diferentemente da função on(), que como já vimos fica escutando o evento em um elemento do HTML por tempo ilimitado.
+
+.find()= Buscar nos filhos através da função
+
+.append() = Anexar HTML como um último filho
+Se quisermos adicionar a nova linha como primeiro item da tabela, devemos utilizar uma função que é prima da função
+
+.prepend() = Anexar HTML como um primeiro filho
+
+
 
 

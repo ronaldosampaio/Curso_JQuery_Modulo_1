@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+	<link rel="stylesheet" href="css/libs/materialize.min.css">
+	<link rel="stylesheet" href="css/libs/google-fonts.css">
+	<link rel="stylesheet" href="css/libs/selectize.default.css">
+	<link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Alura Typer</h1>
-    <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<div class="container">
+		<h1 class="center">Alura Typer</h1>
+		<p class="frase center">Teste teste teste</p>
+<!--	
+<p class="frase center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+-->
+		<ul class="informacoes center">
+			<li>
+				<i class="small material-icons">description</i>
+				<span id="tamanho-frase">0</span> palavras</li>
+			<li>
+				<i class="small material-icons">query_builder</i>
+				<span id="tempo-digitacao">10</span> segundos</li>
+		</ul>
 
-    <ul class="informacoes">
-        <li><span id="tamanho-frase">19</span> palavras</li>
-        <li>15 segundos</li>
-    </ul>
-	
-	
-	<textarea class="campo-digitacao" rows="8" cols="40"></textarea>
-	
-	<ul>
-	    <li><span class="contador-caracteres">0</span> caracteres</li>
-		<li><span class="contador-palavras">0</span> palavras</li>
-	</ul>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+			<textarea class="campo-digitacao" rows="8" cols="40"></textarea><br>
+			<button id="botao-reiniciar">Reiniciar Jogo</button>
+
+
+		<ul class="center">
+			<li><span class="contador-caracteres">0</span> caracteres</li>
+			<li><span class="contador-palavras">0</span> palavras</li>
+		</ul>
+		
+		<section class="placar">
+			<h3 class="center">Placar</h3>
+			<table class="centered bordered">
+			
+			    <thread>
+				    <tr>
+					    <th>Nome</th>
+						<th>Numero palavras</th>
+					</tr>
+				</thread>
+				
+				
+			</table>
+		</section>
+		
+		
+		
+		
+<ul class="level-1">
+    <li class="item-i">I</li>
+	<li class="item-ii">II</li>
+		<ul class="level-2">
+			<li class="item-a">A</li>
+			<li class="item-b">B</li>
+			
+				<ul class="level-3">
+					<li class="item-1">1</li>
+					<li class="item-2">2</li>
+					<li class="item-3">3</li>
+				</ul>
+			<li class="item-c">C</li>
+		</ul>
+    
+	
+  <li class="item-iii">III</li>
+</ul>
+		
+		
+	</div>
+	
+	
+	<div id="site-loader"></div>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
