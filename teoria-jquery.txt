@@ -48,6 +48,11 @@ Se quisermos adicionar a nova linha como primeiro item da tabela, devemos utiliz
 
 .prepend() = Anexar HTML como um primeiro filho
 
+.parent() = O método parent() retorna o elemento pai direto do elemento selecionado.
+Seleciona o elemento e vai subindo ate o elemento pai que sera os parentes acima.
+
+
+
 
 
 
